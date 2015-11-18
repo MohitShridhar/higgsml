@@ -1,0 +1,78 @@
+{
+    "folders":
+    [
+            {
+                  "follow_symlinks": true,
+                  "path": "."
+            }
+     ],
+       
+    "auto_indent": true,
+    "auto_complete": true,
+    "rulers": [79],
+    "smart_indent": true,
+    "tab_size": 4,
+    "trim_automatic_white_space": true,
+    "use_tab_stops": true,
+    "word_wrap": true,
+    "wrap_width": 80,
+
+    "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}],
+      "settings": {
+          "python_interpreter_path": "/usr/local/bin/python"
+      },
+
+        // Colors
+    "color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+    "theme": "Soda Dark.sublime-theme",
+
+    // Font
+    "font_face": "Ubuntu Mono",
+    "font_size": 16.0,
+    "font_options": ["subpixel_antialias", "no_bold"],
+    "line_padding_bottom": 0,
+    "line_padding_top": 0,
+
+    // Cursor style - no blinking and slightly wider than default
+    "caret_style": "solid",
+    "wide_caret": true,
+
+    // Editor view look-and-feel
+    "draw_white_space": "all",
+    "fold_buttons": false,
+    "highlight_line": true,
+    "auto_complete": false,
+    "show_minimap": false,
+    "show_full_path": true,
+
+    // Editor behavior
+    "scroll_past_end": false,
+    "highlight_modified_tabs": true,
+    "find_selected_text": true,
+
+    // Word wrapping - follow PEP 8 recommendations
+    "rulers": [ 72, 79 ],
+    "word_wrap": true,
+    "wrap_width": 80,
+
+    // Whitespace - no tabs, trimming, end files with \n
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+
+    // Sidebar - exclude distracting files and folders
+    "file_exclude_patterns":
+    [
+        ".DS_Store",
+        "*.pid",
+        "*.pyc"
+    ],
+    "folder_exclude_patterns":
+    [
+        ".git",
+        "__pycache__",
+        "env",
+        "env3"
+    ]
+}
