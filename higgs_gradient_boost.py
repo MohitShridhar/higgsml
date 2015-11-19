@@ -39,7 +39,7 @@ print 'Training classifier ...'
 
 
 # ------- X Gradient Boost Classifier ---------
-xgb_model = xgb.XGBClassifier(n_estimators=300, max_depth=6, silent=False, nthread=8)
+xgb_model = xgb.XGBClassifier(n_estimators=300, max_depth=5, silent=False, nthread=8)
 xgb_model.fit(X_train, Y_train)
 
 prob_predict_train = xgb_model.predict_proba(X_train)[:,1]
