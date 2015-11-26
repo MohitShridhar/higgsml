@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 
 # Load traning data:
 print 'Loading Data'
-n_skiprows = 1 #244500
+n_skiprows = 1
 data_train = np.loadtxt('training.csv', delimiter=',', skiprows=n_skiprows, converters={32: lambda x:int(x=='s'.encode('utf-8'))})
 
 # Pick a random seed for CV split:
@@ -39,7 +39,7 @@ print 'Training classifier ...'
 
 
 # ------- X Gradient Boost Classifier ---------
-xgb_model = xgb.XGBClassifier(n_estimators=300, max_depth=5, silent=False, nthread=8)
+xgb_model = xgb.XGBClassifier(n_estimators=300, max_depth=3, silent=False, nthread=8)
 xgb_model.fit(X_train, Y_train)
 
 prob_predict_train = xgb_model.predict_proba(X_train)[:,1]
@@ -95,6 +95,14 @@ ams_valid = AMSScore(s_valid, b_valid)
 
 print 'AMS of training set (90%): ', ams_train
 print 'AMS of validation set (10%): ', ams_valid
+
+# Compute Percent Error training and validation set:
+print 'Computing Percentage Error'
+predict_train = xgb_model.predict(X_train)
+predict_valid = xgb_model.predict(X_valid)
+
+print 'Percentage Error (Train): ', np.mean(np.abs((Y_train - predict_train) / Y_train)) * 100
+print 'Percentage Error (Valid): ', np.mean(np.abs((Y_valid - predict_valid) / Y_valid)) * 100
 
 # Terminate if the generalization error is very bad:
 epsilon_error = 0.45
