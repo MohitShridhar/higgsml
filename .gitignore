@@ -1,3 +1,4 @@
 *.csv
 plots/*
 checkpoints/*
+*.xml

@@ -18,7 +18,7 @@ r = np.random.rand(data_train.shape[0])
 
 # Sorting data into Y(labels), X(input), W(weights)
 print 'Assigning data to numpy arrays'
-cv_ratio = 0.9
+cv_ratio = 0.75
 # First 90% for training
 Y_train = data_train[:,32][r<cv_ratio] > 0.
 X_train = data_train[:,1:31][r<cv_ratio]
