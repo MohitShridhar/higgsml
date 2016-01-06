@@ -8,9 +8,10 @@ In particle physics, Higgs Boson to tau-tau decay signals are notoriously diffic
 [Poster](http://cs229.stanford.edu/proj2015/017_poster.pdf)
 
 # Usage
+Full instructions coming soon.
 
 ## Dataset
-CERN [dataset](https://www.kaggle.com/c/higgs-boson/data)
+[CERN dataset](https://www.kaggle.com/c/higgs-boson/data)
 
 ## Setting-up TensorFlow on Amazon EC2
 [Setup Script](https://gist.github.com/erikbern/78ba519b97b440e10640)
