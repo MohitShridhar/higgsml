@@ -18,7 +18,7 @@ For GPU-accelerated training:
 [Setup Script](https://gist.github.com/erikbern/78ba519b97b440e10640)
 
 ## Training
-Train the dropout neural network using CERN dataset:
+Train the model:
 ```
 $ sudo python higgs_neural_net.py 
 ```
