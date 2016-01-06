@@ -13,7 +13,7 @@ Full instructions coming soon.
 ## Dataset
 [CERN dataset](https://www.kaggle.com/c/higgs-boson/data)
 
-## Setting-up TensorFlow on Amazon EC2
+## TensorFlow on Amazon EC2 GPU Cluster
 For GPU-accelerated training:
 [Setup Script](https://gist.github.com/erikbern/78ba519b97b440e10640)
 
