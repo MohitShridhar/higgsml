@@ -8,7 +8,7 @@ In particle physics, Higgs Boson to tau-tau decay signals are notoriously diffic
 [Poster](http://cs229.stanford.edu/proj2015/017_poster.pdf)
 
 # Usage
-Train a dropout neural network (350x350x350):
+Train the dropout neural network using CERN dataset:
 ```
 $ sudo python higgs_neural_net.py 
 ```
